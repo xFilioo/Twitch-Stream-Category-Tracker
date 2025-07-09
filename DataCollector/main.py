@@ -201,7 +201,7 @@ def main_loop():
                     streamer_id = ensure_streamer_in_db(cursor, streamer)
                     ensure_category_in_db(cursor, category_id, category_name)
                     update_or_insert_stream(cursor, streamer_id, category_id)
-                    print(f"{streamer} online in category {category_name} ({category_id})")
+                    print(f"{streamer} online in category: {category_name} ({category_id})")
                 else:
                     streamer_id = ensure_streamer_in_db(cursor, streamer)
                     set_end_time_for_offline(cursor, streamer_id)
