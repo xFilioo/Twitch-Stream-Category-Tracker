@@ -10,12 +10,10 @@ $mysqli = new mysqli('your_hostname_here', 'your_username_here', 'your_password_
 if ($mysqli->connect_errno) die("Connection error: " . $mysqli->connect_error);
 
 $streamers = $mysqli->query("SELECT id, login FROM streamers WHERE login IN (
-'angela35',
-'ewroon',
-'graf',
 'neexcsgo',
 'rybsonlol_',
 'youngmulti',
+'ewroon',
 'h2p_gucio',
 'xntentacion',
 'slayproxx',
@@ -38,6 +36,7 @@ $streamers = $mysqli->query("SELECT id, login FROM streamers WHERE login IN (
 'kubon_',
 'nimuena_',
 'kasix',
+'angela35',
 'demonzz1',
 'gluhammer',
 'achtenwlodar',
@@ -49,6 +48,7 @@ $streamers = $mysqli->query("SELECT id, login FROM streamers WHERE login IN (
 'discokarol',
 'natanzgorzyk',
 'nieuczesana',
+'graf',
 'parisplatynov',
 'besi523',
 'pago3',
